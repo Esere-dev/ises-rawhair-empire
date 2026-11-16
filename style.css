@@ -310,3 +310,269 @@ body {
         font-size: 16px;
     }
 }
+
+/* COLLECTION SECTION */
+.collections {
+    padding: 100px 7%;
+    background-color: var(--ivory);
+    text-align: center;
+}
+
+.collections h2 {
+    color: var(--espresso);
+    font-size: 36px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.collections p {
+    color: var(--warm-nude);
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 45px;
+}
+
+.collection-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.collection-card {
+    padding: 45px 25px;
+    background-color: #ffffff;
+    border: 1px solid var(--champagne);
+}
+
+.collection-card h3 {
+    color: var(--espresso);
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+/* COLLECTION RESPONSIVENESS */
+@media (max-width: 768px) {
+    .collection-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .collections {
+        padding: 70px 6%;
+    }
+
+    .collections h2 {
+        font-size: 28px;
+    }
+
+    .collections p {
+        font-size: 15px;
+    }
+}
+/* ABOUT PAGE BUTTON */
+.about-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 14px 28px;
+    background-color: var(--espresso);
+    color: var(--ivory);
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    border: 1px solid var(--espresso);
+    transition: all 0.3s ease;
+}
+
+.about-button:hover {
+    background-color: var(--champagne);
+    color: var(--espresso);
+    border-color: var(--champagne);
+}
+.about-tagline {
+    margin-bottom: 8px;
+}
+
+.about-tagline + .about-button {
+    margin-top: 0;
+}
+/* FOOTER SECTION */
+.footer {
+    background-color: var(--espresso);
+    color: var(--ivory);
+    padding: 60px 7% 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding-bottom: 40px;
+}
+
+.footer-brand h2 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    color: var(--champagne);
+    line-height: 1.8;
+    max-width: 350px;
+}
+
+.footer-links h3 {
+    color: var(--champagne);
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.footer-links a {
+    display: block;
+    color: var(--ivory);
+    text-decoration: none;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: var(--champagne);
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--warm-nude);
+    padding-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--champagne);
+}
+/* FOOTER RESPONSIVENESS */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .footer-brand p {
+        max-width: 100%;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-bottom {
+        font-size: 11px;
+        line-height: 1.6;
+    }
+}
+/* SOCIAL MEDIA ICONS */
+.social-icons {
+    display: flex;
+    gap: 22px;
+    margin-top: 22px;
+}
+
+.social-icons a {
+    color: var(--brown);
+    font-size: 23px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--ivory);
+    transform: translateY(-3px);
+}
+.social-icons a:hover {
+    transform: translateY(-3px);
+}
+
+.social-icons a[aria-label="Instagram"]:hover {
+    color: #E1306C;
+}
+
+.social-icons a[aria-label="Snapchat"]:hover {
+    color: #FFFC00;
+}
+
+.social-icons a[aria-label="Facebook"]:hover {
+    color: #1877F2;
+}
+
+.social-icons a[aria-label="TikTok"]:hover {
+    color: #000000;
+}
+
+.social-icons a[aria-label="WhatsApp"]:hover {
+    color: #25D366;
+}
+
+.social-icons a[aria-label="Call us"]:hover {
+    color: #2E2522;
+}
+
+/* CONTACT SECTION */
+.contact {
+    padding: 80px 7%;
+    background-color: var(--ivory);
+    text-align: center;
+}
+
+.contact h2 {
+    color: var(--espresso);
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.contact p {
+    color: var(--warm-nude);
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.contact-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: var(--espresso);
+    color: var(--ivory);
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: var(--champagne);
+    color: var(--espresso);
+}
+/* CONTACT PAGE SOCIAL ICONS */
+.contact + .social-icons {
+    justify-content: center;
+    margin: 35px auto 0;
+    width: fit-content;
+    gap: 25px;
+}
+.collection-footer {
+    background-color: var(--espresso);
+    padding: 20px 7%;
+    text-align: center;
+}
+
+.collection-footer p {
+    color: var(--champagne);
+    font-size: 12px;
+}
